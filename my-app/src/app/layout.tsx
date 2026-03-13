@@ -1,13 +1,19 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Mono } from "next/font/google";
+import { Fira_Code } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const ibmPlexMono = IBM_Plex_Mono({
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ['400','500','600','700'],
+  variable: '--font-inter'
+})
+
+const firaCode = Fira_Code({
   subsets: ["latin"],
   weight: ['400', '500', '600', '700'],
-  variable: '--font-ibm-plex'
+  variable: '--font-fira'
 });
-
 
 export const metadata: Metadata = {
   title: "Titulo Qualquer",
@@ -22,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${ibmPlexMono.variable} antialiased font-mono`}
+        className={`${inter.variable} ${firaCode.variable} antialiased font-mono`}
       >
         {children}
       </body>

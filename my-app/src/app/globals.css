@@ -6,14 +6,29 @@
 }
 
 @theme inline {
-  /* Aqui você diz ao Tailwind que 'font-mono' deve usar a sua variável */
-  --font-mono: var(--font-ibm-plex), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-inter: var(--font-inter);
+  --font-fira: var(--font-fira);
+
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-fira)
 }
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+@utility text-outline-white {
+  -webkit-text-stroke: 1px white;
+}
+
+@utility text-outline-shadow {
+  text-shadow: 
+    -1px -1px 0 white,  
+     1px -1px 0 white,
+    -1px  1px 0 white,
+     1px  1px 0 white;
 }
 
 body {
