@@ -1,52 +1,40 @@
-import Image from 'next/image'
-import { Button } from '../ui/Button'
-
-const projects = [
-  {
-    title: 'Placeholder 1',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, porro dolor.',
-    img: '/images/project-placeholder.png',
-    link: 'nada por enquanto',
-  },
-  {
-    title: 'Placeholder 2',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, porro dolor.',
-    img: '/images/project-placeholder.png',
-    link: 'nada por enquanto',
-  },
-  {
-    title: 'Placeholder 3',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, porro dolor.',
-    img: '/images/project-placeholder.png',
-    link: 'nada por enquanto',
-  },
-]
+import { ProjectCard } from '../ui/ProjectCard'
 
 export function Project({ className = '' }) {
   return (
-    <section
-      className={`{${className} flex w-100 flex-col items-center bg-gray-950 p-5`}
-    >
-      <h2 className="font-inter text-2xl font-bold">Projetos</h2>
+    <section className={`{${className} flex w-100 flex-col items-center`}>
       <div>
-        <ul className="">
-          {projects.map((project) => (
-            <li key={project.title} className="flex flex-col items-center">
-              <Image
-                src={project.img}
-                alt={project.title}
-                width={250}
-                height={150}
-                className="rounded-2xl"
+        <h2 className="font-inter ml-5 text-3xl">My Projects</h2>
+        <div>
+          <ul className="flex">
+            <li>
+              <ProjectCard
+                title="Projeto legal"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque officiis velit adipisci vero."
+                techStack={['HTML', 'CSS', 'JavaScript']}
+                github="https://github.com/antonioeduthz"
+                liveUrl="https://github.com/antonioeduthz"
               />
-              <h3 className="font-inter">{project.title}</h3>
-              <Button variant="primary">Link</Button>
             </li>
-          ))}
-        </ul>
+            <li>
+              <ProjectCard
+                title="Projeto normal"
+                description="Esse projeto é um projeto normal"
+                techStack={['HTML', 'CSS', 'JavaScript']}
+                github="https://github.com/antonioeduthz"
+              />
+            </li>
+            <li>
+              <ProjectCard
+                title="Projeto Foda"
+                description="Esse projeto é um dos projetos mais fodas criados pela humanidade"
+                techStack={['HTML', 'CSS', 'JavaScript']}
+                github="https://github.com/antonioeduthz"
+                liveUrl="https://github.com/antonioeduthz"
+              />
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   )

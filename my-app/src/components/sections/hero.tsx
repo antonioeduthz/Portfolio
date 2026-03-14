@@ -19,8 +19,7 @@ export function Hero({ className = '', ...props }) {
           </p>
         </div>
       </div>
-
-      <Button>button</Button>
+      <Button className="ml-28 text-[15px]">View Resume ↗</Button>
     </section>
   )
 }
