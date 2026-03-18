@@ -11,8 +11,7 @@ export function Button({
   className = '',
   ...props
 }: ButtonProps) {
-  const baseStyles =
-    'font-fira my-4 mx-4  h-10 w-35 transition-all duration-200'
+  const baseStyles = 'font-fira h-10 w-35 transition-all duration-200'
 
   const variants = {
     primary: 'bg-white text-black hover:bg-gray-200 ',

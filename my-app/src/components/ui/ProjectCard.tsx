@@ -14,10 +14,10 @@ export function ProjectCard({
   liveUrl,
 }: ProjectCardProps) {
   return (
-    <div className="m-3 flex h-52 w-80 flex-col items-center justify-between p-3 font-mono outline-0 outline-white hover:outline-1">
+    <div className="flex h-52 w-80 flex-col items-center justify-between font-mono outline-0 outline-white hover:outline-1">
       <div>
         <h3 className="font-sans text-xl">{title}</h3>
-        <p className="mb-3">{description}</p>
+        <p className="mb-1">{description}</p>
       </div>
 
       <div className="flex flex-col items-center">
