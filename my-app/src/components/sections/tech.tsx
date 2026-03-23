@@ -29,12 +29,12 @@ export function Technology({ className = '' }) {
       <div className="flex flex-col gap-10 md:flex-row">
         {technology.map((tech) => (
           <div key={tech.title} className="flex flex-col items-start">
-            <h3 className="mb-2 font-sans text-2xl">{tech.title}</h3>
+            <h3 className="mb-2 font-sans text-3xl">{tech.title}</h3>
             <ul>
               {tech.techs.map((value) => (
                 <li
                   key={value.name}
-                  className="transition:all mb-1 flex gap-2 duration-200 hover:scale-120"
+                  className="transition:all mb-1 flex gap-2 text-neutral-500 duration-200 hover:scale-120 hover:text-white"
                 >
                   <Image
                     src={value.img}
@@ -42,7 +42,9 @@ export function Technology({ className = '' }) {
                     height={15}
                     alt={`{tech.name}`}
                   />
-                  <span className="mb-1 font-mono">{value.name}</span>
+                  <span className="mb-1 cursor-default font-mono">
+                    {value.name}
+                  </span>
                 </li>
               ))}
             </ul>

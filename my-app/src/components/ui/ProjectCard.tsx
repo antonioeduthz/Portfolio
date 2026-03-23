@@ -14,16 +14,19 @@ export function ProjectCard({
   liveUrl,
 }: ProjectCardProps) {
   return (
-    <div className="flex h-52 w-80 flex-col items-center justify-between font-mono outline-0 outline-white hover:outline-1">
+    <div className="flex h-52 max-w-80 flex-col items-center justify-between font-mono outline-0 outline-offset-4 outline-white hover:outline-1 md:w-55 lg:w-80">
       <div>
         <h3 className="font-sans text-xl">{title}</h3>
-        <p className="mb-1">{description}</p>
+        <p className="mb-1 text-neutral-500">{description}</p>
       </div>
 
       <div className="flex flex-col items-center">
         <div className="flex gap-4">
           {techStack.map((tech) => (
-            <span key={tech} className="text-xs">
+            <span
+              key={tech}
+              className="cursor-default text-xs text-neutral-600 hover:scale-110 hover:text-white"
+            >
               {tech}
             </span>
           ))}

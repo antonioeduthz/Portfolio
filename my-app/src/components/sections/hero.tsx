@@ -15,7 +15,7 @@ export function Hero({ className = '', ...props }) {
       /> */}
       <div className="lg:flex lg:flex-col">
         <h1 className="font-inter pb-3 text-4xl">Lorem ipsum dolor sit amet</h1>
-        <p className="font-fira">
+        <p className="font-fira text-neutral-500">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         </p>
         <Button className="mt-5 text-[15px]">View Resume ↗</Button>
