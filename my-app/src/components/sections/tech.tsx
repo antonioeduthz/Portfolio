@@ -25,8 +25,8 @@ const technology = [
 
 export function Technology({ className = '' }) {
   return (
-    <section className={`border-white ${className} flex flex-col items-start`}>
-      <div className="flex flex-col gap-10">
+    <section className={`border-white ${className}`}>
+      <div className="flex flex-col gap-10 md:flex-row">
         {technology.map((tech) => (
           <div key={tech.title} className="flex flex-col items-start">
             <h3 className="mb-2 font-sans text-2xl">{tech.title}</h3>

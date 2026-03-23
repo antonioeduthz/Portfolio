@@ -6,19 +6,14 @@ import { AboutMe } from '@/components/sections/aboutme'
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-start gap-5 p-5 lg:grid lg:grid-cols-4 lg:grid-rows-2 lg:p-20">
-      {/* <div className="grid grid-cols-4 grid-rows-2 gap-4 p-20">
-        <Hero className="col-span-2 row-span-1 pb-25" />
-        <HeroSocial className="col-span-2 row-span-1 justify-center pl-70" />
-        <AboutMe className="col-span-2 row-span-1" />
-        <Technology className="col-span-2 row-span-1" />
+    <main className="">
+      <div className="flex w-full flex-col justify-between gap-30 p-20 md:grid md:grid-cols-4 md:grid-rows-2">
+        <Hero className="col-span-2" />
+        <HeroSocial className="md: hidden w-full md:col-span-2 md:flex md:justify-end" />
+        <AboutMe className="col-span-2" />
+        <Technology className="col-span-2 md:flex md:justify-end" />
+        <Project className="col-span-4" />
       </div>
-      <Project className="col-span-4 row-span-1 flex w-full" /> */}
-      <Hero className="lg:col-span-2 lg:row-span-1" />
-      <HeroSocial className="hidden justify-center lg:col-span-2 lg:row-span-1 lg:inline" />
-      <AboutMe />
-      <Technology />
-      <Project />
     </main>
   )
 }

@@ -6,7 +6,7 @@ export function Project({ className = '' }) {
       <div>
         <h2 className="font-inter pb-5 text-3xl">My Projects</h2>
 
-        <ul className="flex flex-col items-start gap-10">
+        <ul className="flex flex-col items-start gap-10 md:flex-row">
           <li>
             <ProjectCard
               title="Projeto legal"

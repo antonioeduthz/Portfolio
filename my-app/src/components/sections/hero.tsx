@@ -6,15 +6,15 @@ export function Hero({ className = '', ...props }) {
     <section
       className={`container flex flex-col items-start lg:flex-row ${className}`}
     >
-      <Image
+      {/* <Image
         src="/images/perfil.png"
         alt="Profile picture"
         width={75}
         height={75}
         className="mr-10 mb-3 rounded-full"
-      />
+      /> */}
       <div className="lg:flex lg:flex-col">
-        <h1 className="font-inter text-4xl">Lorem ipsum dolor sit amet</h1>
+        <h1 className="font-inter pb-3 text-4xl">Lorem ipsum dolor sit amet</h1>
         <p className="font-fira">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         </p>
