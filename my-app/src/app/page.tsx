@@ -3,7 +3,7 @@ import { Technology } from '@/components/sections/tech'
 import { Project } from '@/components/sections/projects'
 import { HeroSocial } from '@/components/sections/hero-social'
 import { AboutMe } from '@/components/sections/aboutme'
-import { Footer } from '@/components/sections/footer'
+import { Form } from '@/components/sections/form'
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
         <Technology className="col-span-2 md:flex md:justify-end" />
         <Project className="col-span-4" />
       </div>
-      <Footer className="" />
+      <Form className="" />
     </main>
   )
 }

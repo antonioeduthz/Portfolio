@@ -11,10 +11,11 @@ export function Button({
   className = '',
   ...props
 }: ButtonProps) {
-  const baseStyles = 'font-fira h-10 w-35 transition-all duration-200'
+  const baseStyles =
+    'font-fira h-10 w-35 transition-all duration-200 cursor-pointer'
 
   const variants = {
-    primary: 'bg-white text-black hover:bg-gray-200 ',
+    primary: 'bg-white text-black hover:bg-neutral-400 ',
   }
   return (
     <button

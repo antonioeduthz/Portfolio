@@ -19,7 +19,7 @@ export function Project({ className = '' }) {
           <li>
             <ProjectCard
               title="Projeto normal"
-              description="Esse projeto é um projeto normal"
+              description="Esse projeto é um projeto normal tão normal que n seio oq falar"
               techStack={['HTML', 'CSS', 'JavaScript']}
               github="https://github.com/antonioeduthz"
             />
